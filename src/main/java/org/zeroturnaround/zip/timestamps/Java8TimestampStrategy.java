@@ -27,24 +27,7 @@ import java.util.zip.ZipEntry;
 public class Java8TimestampStrategy implements TimestampStrategy {
 
   public void setTime(ZipEntry newInstance, ZipEntry oldInstance) {
-    {
-      FileTime time = oldInstance.getCreationTime();
-      if (time != null) {
-        newInstance.setCreationTime(time);
-      }
-    }
-    {
-      FileTime time = oldInstance.getLastModifiedTime();
-      if (time != null) {
-        newInstance.setLastModifiedTime(time);
-      }
-    }
-    {
-      FileTime time = oldInstance.getLastAccessTime();
-      if (time != null) {
-        newInstance.setLastAccessTime(time);
-      }
-    }
+    
   }
 
 }
