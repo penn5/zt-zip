@@ -24,10 +24,7 @@ import java.util.zip.ZipEntry;
 public class PreJava8TimestampStrategy implements TimestampStrategy {
 
   public void setTime(ZipEntry newInstance, ZipEntry oldInstance) {
-    long time = oldInstance.getTime();
-    if (time != -1) {
-      newInstance.setTime(time);
-    }
+    
   }
 
 }
